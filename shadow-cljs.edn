@@ -1,0 +1,10 @@
+;; shadow-cljs.edn
+{:builds
+ {:mobile
+  {:target :react-native
+   :output-dir "mobile/build"
+   :modules {:main {:entries [my-app.core]}}}
+  :desktop
+  {:target :electron
+   :output-dir "desktop/build"
+   :modules {:main {:entries [my-app.core]}}}}}
